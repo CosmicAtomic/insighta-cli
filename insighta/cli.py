@@ -59,7 +59,7 @@ def list_cmd(gender, country, age_group, min_age, max_age, sort_by, order, page,
     console.print(table)
     console.print(f"Total: {data['total']}")
 
-@profiles.command()
+@profiles.command(name="get")
 @click.argument('id')
 def get_cmd(id):
     with console.status("Fetching profile..."):
@@ -75,7 +75,7 @@ def get_cmd(id):
     table.add_row(p["name"], p["gender"], str(p["age"]), p["country_id"])
     console.print(table)
 
-@profiles.command()
+@profiles.command(name="search")
 @click.argument('query')
 def search_cmd(query):
     with console.status("Searching profiles..."):
@@ -91,7 +91,7 @@ def search_cmd(query):
         table.add_row(p["name"], p["gender"], str(p["age"]), p["country_id"])
     console.print(table)
 
-@profiles.command()
+@profiles.command(name="create")
 @click.option('--name', required=True, help='Name of profile')
 def create_cmd(name):
     with console.status("Creating profile..."):
