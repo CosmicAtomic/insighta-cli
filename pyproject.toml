@@ -9,6 +9,7 @@ dependencies = [
     "click",
     "httpx",
     "rich",
+    "python-dotenv"
 ]
 
 [project.scripts]
