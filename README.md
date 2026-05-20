@@ -19,7 +19,7 @@ A command-line interface for interacting with the Insighta API. Supports GitHub 
 
 ## Related Repositories
 
-- **Backend API:** [name-profiler](https://github.com/CosmicAtomic/name-profiler) — The API this CLI connects to
+- **Backend API:** [name-profiler](https://github.com/CosmicAtomic/insighta-platform) — The API this CLI connects to
 - **Web Portal:** [insighta-web](https://github.com/CosmicAtomic/insighta-web) — Browser-based interface at https://insighta-lab.netlify.app/
 
 **Key modules:**
