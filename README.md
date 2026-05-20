@@ -112,7 +112,7 @@ pip install -e .
 **Environment variables** (create a `.env` file in the project root):
 
 ```env
-BACKEND_URL=http://localhost:8000
+BACKEND_URL=https://insighta-gfrf.onrender.com
 ```
 
 If `BACKEND_URL` is not set, it defaults to `http://localhost:8000`.
@@ -153,13 +153,13 @@ insighta profiles list --gender female --country NG --page 2 --limit 50
 #   --limit       Results per page (default: 20)
 
 # Get a single profile by ID
-insighta profiles get-cmd <profile-id>
+insighta profiles get <profile-id>
 
 # Search profiles by keyword
-insighta profiles search-cmd "john"
+insighta profiles search "john"
 
 # Create a new profile
-insighta profiles create-cmd --name "Jane Doe"
+insighta profiles create --name "Jane Doe"
 
 # Export profiles to CSV
 insighta profiles export
